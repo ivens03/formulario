@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url(../css/background.css);
+
+:root {
+    --light: #f8fafc;
+
+    --lightBlack: #797984;
+    --halfBlack: #312d37;
+    --black: #000;
+
+    --darkPurple: #7c3ead;
+    --halfPurple: #a855f7;
+    --lightPurple: #bf46ef;
+
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contairner {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#socialIcons i{
+    font-size: 40px;
+    color: white;
+}
+
+#loginForm {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    border-radius: 10px;
+    gap: 20px; /*Vai por o mesmo espaçamento entre tudo*/
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    height: fit-content;
+}
+
+#heardForms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#heardForms i {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#heardForms h1 { 
+    position: relative;
+}
+
+#heardForms h1::after { /*Efeito da linha*/
+    position: absolute;
+    content: '';
+    width: 45%;
+    background-color: var(--halfPurple);
+    height: 4px;
+    bottom: 0px;
+    left: 0; /*Para alinhar a esquerda*/    
+}
+
+#socialIcons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    font-size: 40px;
+    color: #000;
+}
+
+#socialIcons a {
+    text-decoration: none;
+    color: black;
+}
+
+#socialIcons i:hover {
+    transform: scale(1.4);
+    transition: .5s;
+    color: rgb(199, 35, 35);
+}
+
+#input {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--lightBlack);
+}
+
+#input i {
+    padding: 5px;
+    margin-top: 2px;
+    color: var(--black);
+}
+
+.inputBox { /*Faz o efeito da linha de baixo*/
+    cursor: text;
+    border-bottom: 2px solid var(--black);
+}
+
+main input {
+    border: none;
+}
+
+main button {
+    border: none;
+    background: linear-gradient(90deg, var(--lightBlack), var(--halfBlack));
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    width: 11rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.password {
+    cursor: text;
+    border-bottom: 2px solid var(--black);
+}
+
+#forgotPassword a{
+    text-decoration: none;
+    color: white;
+}
+
+#forgotPassword {
+    color: white;
+}
+
+#input i {
+    color: white;
+}

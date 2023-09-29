@@ -1,0 +1,11 @@
+#background {
+    background: url(../assets/back.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover; /* Adiciona esta linha para tornar a imagem de fundo responsiva */
+    justify-content: center;
+    background-position: center; /* Centraliza horizontalmente e verticalmente */
+    background-repeat: no-repeat; /* não vai repetir a imagem */
+    z-index: -1; 
+}

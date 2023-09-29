@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form's</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/global.css" id="colorCss">
+</head>
+<body>
+
+    <div id="background"></div>
+
+    <main id="contairner">
+        <form id="loginForm">
+
+            <div id="heardForms">
+                <h1>Login</h1>
+                <i class="fa-solid fa-moon" id="moon"></i>
+            </div>
+            
+            <div id="social">
+
+                <div id="socialIcons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>    
+
+                <div id="input">
+
+                    <div class="inputBox">
+                        <label>
+                            <h4>Name:</h4>
+                                <i class="fa-solid fa-user"></i>
+                            <input type="text" name="name" placeholder="Nome">
+                        </label>
+                    </div>
+
+                    <div class="inputBox">
+                        <label>
+                            <h4>E-mail:</h4>
+                                <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="E-mail">
+                        </label>
+                    </div>
+
+                    <!--<div class="inputBox">-->
+                    <div class="password">
+                        <label>
+                            <h4>Password:</h4>
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="password" placeholder="Password">
+                        </label>
+                    </div>
+
+                        <div id="passwordInf">
+
+                            
+                            <div id="rememberPassaword">
+                                <input type="checkbox" id="check" name="check" >
+                                <label for="">Remember My Passaword</label>
+                            </div>
+                        </div>
+
+                        <div id="forgotPassword">
+                            <a href="#">
+                                Forgot Your Passaword?
+                            </a>
+                        </div>
+                        
+                            <button id="loginButton" type="submit">
+                                Login
+                            </button>
+
+                    <!--</div>-->
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="../js/script.JS"></script>
+</body>
+</html>
